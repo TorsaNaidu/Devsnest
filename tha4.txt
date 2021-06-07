@@ -1,0 +1,53 @@
+
+<html>
+<head>
+<style>
+.parent {
+       background-color:blue;
+       width:400px; /* You can define it by % also */
+       height:400px; /* You can define it by % also*/
+       position:relative;
+       border:1px solid black;
+       border-radius: 50%;
+  }
+
+.circle-container {
+  display: block;
+  position: absolute;
+  top: 15.5%;
+  left: 7.5%;
+  background: #fff;
+  width: 11.5em;
+  height: 11.5em;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: thin;
+  border-color: #bfbfbf;
+  margin: 0em;
+}
+.radius {
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  left: 50%;
+  top: 50%;
+  background: red;
+  transform-origin: left center;
+}
+.two {
+  background: green;
+  transform: rotate(-30deg);
+  }
+  </style>
+
+</head>
+<body>
+  <div class="parent">
+  </div>
+
+<div class="circle-container">
+  <div class="radius"></div>
+  <div class="radius two"></div>
+</div>
+</body>
+</html>
