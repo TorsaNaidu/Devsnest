@@ -1,95 +1,42 @@
-body {
-  text-align: center;
-  position: relative;
-  background-color: black;
+<style>
+     .parent {
+            background-color:blue;
+            width:400px; /* You can define it by % also */
+            height:400px; /* You can define it by % also*/
+            position:relative;
+            border:1px solid black;
+            border-radius: 50%;
+       }
+    .child1 {
+            background-color:lime;
+            top: 10%; left:10%; /* of the container */
+            width:80%; /* of the outer-1 */
+            height:80%; /* of the outer-1 */
+            position: absolute;
+            border:1px solid black;
+            border-radius: 50%;
+          }
+    .child2 {
+            background-color:yellow;
+            top: 20%; left:20%; /* of the container */
+            width:60%; /* of the inner-1 */
+            height:60%; /* of the inner-1 */
+            position: absolute;
+            border:1px solid black;
+            border-radius: 50%;
+      }
+    .circle-container{
+    display: block;
+    position: absolute;
+    top: 15.5%;
+    left: 14.5%;
+    background: #fff;
+    width: 11.5em;
+    height: 11.5em;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: thin;
+    border-color: #bfbfbf;
+    margin: 0em;
 }
-
-.clock {
-  border-radius: 50%;
-  border: 2px solid #020409;
-  height: 500px;
-  width: 500px;
-  display: inline-block;
-  position: relative;
-}
-
-.sec {
-  background-color: #fff;
-  height: 250px;
-  width: 3px;
-  margin-left: 250px;
-  margin-top: -450px;
-  z-index: 3;
-  animation: second 60s linear infinite;
-  opacity: 0.7;
-}
-
-.min {
-  height: 250px;
-  background-color: #fff;
-  width: 6px;
-  margin-left: 250px;
-  top: -200px;
-  z-index: 2;
-  animation: minute 3600s linear infinite;
-  opacity: 0.7;
-}
-
-.hour {
-  height: 200px;
-  background-color: #fff;
-  width: 8px;
-  margin-left: 250px;
-  top: 50px;
-  z-index: 1;
-  animation: hr 60000s linear infinite;
-  opacity: 0.7;
-}
-
-.img {
-  position: absolute;
-  background-image: url(./clock.jpg);
-  background-size: cover;
-  border-radius: 50%;
-  height: 500px;
-  width: 500px;
-
-  background-position: center;
-}
-
-.hour,
-.min,
-.sec {
-  position: relative;
-  transform-origin: bottom;
-}
-
-@keyframes second {
-  from {
-    transform: rotateZ(0deg);
-  }
-
-  to {
-    transform: rotateZ(360deg);
-  }
-}
-
-@keyframes hr {
-  from {
-    transform: rotateZ(0deg);
-  }
-
-  to {
-    transform: rotateZ(360deg);
-  }
-}
-
-@keyframes minute {
-  from {
-    transform: rotateZ(0deg);
-  }
-
-  to {
-    transform: rotateZ(360deg);
-  }
-}
+  </style>
