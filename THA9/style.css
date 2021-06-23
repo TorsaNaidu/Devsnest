@@ -1,52 +1,50 @@
 body {
-  margin: 0px;
-  padding: 0px;
-}
-.container {
-  margin-top: 20;
-  margin-bottom: 20;
-  height: 600px;
-  max-width: 440px;
-  margin: auto;
-}
-.grid-container {
-  display: grid;
-  grid-gap: 0px;
-  grid-template-columns: repeat(22, 20px);
-  grid-template-rows: repeat(30, 20px);
-}
-.box {
-  border: solid white;
-  background-color: rgb(237, 241, 248);
-}
-.box:hover {
-  background-color: darkslategrey;
-}
-.black {
-  background-color: black;
-}
-.red {
-  background-color: red;
-}
-.yellow {
-  background-color: yellow;
-}
-.mustard {
-  background-color: #ffdb58;
-}
-.blue {
-  background-color: skyblue;
-}
-.darkblue {
-  background-color: cyan;
-}
-.darkred {
-  background-color: darkred;
-}
-.white {
-  background-color: whitesmoke;
-}
-
-.active {
-  background-color: whitesmoke !important;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    background-color:aliceblue;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .movie-screen {
+    width: 481px;
+  
+    height: 15px;
+    background-color:crimson;
+    border-radius: 12px 12px 0 0;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+  .main-area {
+    background-color: #c24a2cc7;
+    width: 90%;
+    height: 82vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    padding: 8px;
+    border-radius: 2px;
+  }
+  .seat {
+    height: 100%;
+    border-radius: 2px;
+    background-color:yellow;
+  }
+  .seat:hover {
+    background-color:red;
+    background-color:;
+    opacity: 0.5;
+  }
+  .booked {
+    background-color:red;
+  }
